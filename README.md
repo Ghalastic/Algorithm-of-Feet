@@ -6,13 +6,13 @@ Write the algorithm of the design of the feet and the mechanism of the movement 
 #### 
 ## Introduction:
 #### 
-The design of humanoid robots has evolved from the serial design of the first humanoids to more refined architectures. And it’s safe to say that Humanoid robotics has fascinated and challenged scientists for decades. Despite the feet playing a key role in human motion, the mobility of most of these robots is still limited to the legs, arms, hands, and head only, with very few examples including the feet. The human foot architecture is characterized by three main segments, the heel, mid‐foot, and toes, that fulfill distinct roles during bipedal locomotion. Several research groups have tried to improve the foot performance by compensating for a limited mechanical design with an enhanced sensing/control capability, which can be obtained by adding force/pressure sensors to the foot plant. Foot designs with three segments have been proposed to better mimic human‐like motion but are usually characterized by active mechanisms that require complex control and motion coordination with the rest of the body.
+The design of humanoid robots has evolved from the serial design of the first humanoids to more refined architectures. And it’s safe to say that Humanoid robotics has fascinated and challenged scientists for decades. Despite the feet playing a key role in human motion, the mobility of most of these robots is still limited to the legs, arms, hands, and head only, with very few examples including the feet. The human foot architecture is characterized by three main segments, the heel, mid‐foot, and toes, that fulfill distinct roles during bipedal locomotion. Several research groups have tried to improve the foot performance of the robot by compensating for a limited mechanical design with an enhanced sensing/control capability, which can be obtained by adding force/pressure sensors to the foot plant. Foot designs with three segments have been proposed to better mimic human‐like motion but are usually characterized by active mechanisms that require complex control and motion coordination with the rest of the body.
 #### 
 ### In this task, an innovative mechanism for robotic feet is presented that can adapt to the environment without the need for external actuation, all thanks to joint elasticity.
 #### 
 ### 1- Requirements for Humanoid Foot Mechanisms:
 #### 
-To obtain the mobility requirements for humanoid foot mechanisms, the human gait was analyzed in terms of absolute and angular motion, The motion was acquired through a VICON Motion Capture system, with the following retroreflective marker set configuration and alignment: 
+To obtain the mobility requirements for humanoid foot mechanisms, the human gait was analyzed in terms of absolute and angular motion, The motion was acquired through a VICON Motion Capture system, with the following retroreflective marker set configuration and alignment on 11 test subjects: 
 #### 
 -	RA, right ankle marker: Placed at the level of the lateral malleolus.  
 -	RT, right toe marker: Placed on the lateral aspect of the foot at the second metatarsal head.  
@@ -27,7 +27,7 @@ To obtain the mobility requirements for humanoid foot mechanisms, the human gait
 #### 
 ![rightfot](https://github.com/user-attachments/assets/5bd567d6-aef2-47ea-8c0c-c2321ea7d0d9)
 #### 
-### Example of the marker placements on the right foot of a patient, with the right ankle (RA), right toe (RT) and right heel (RQ) markers.
+### Example of the marker placements on the right foot of a test subject, with the right ankle (RA), right toe (RT) and right heel (RQ) markers.
 #### 
 ### 2- An Underactuated Humanoid Foot Mechanism:
 #### 
@@ -43,7 +43,7 @@ The proposed foot mechanism aims to enhance robot mobility and efficiency by ena
 
 -	The motion of the last segment of the foot can be approximated to a flexion/extension movement of the toes, which rotate around the MTP joint and the interphalangeal joints. The MTP joint is usually described as a condyloid joint, while the interphalangeal joints resemble revolute joints.  
 #### 
-To replicate the behavior of the human foot, a new compliant foot mechanism based on the kinematic scheme in the next figure is here presented. The proposed mechanism is based on a compliant mechanism in the plant, which can be approximated with a revolute‐revolute‐prismatic‐revolute architecture, with revolute joints in points B, C, and D, and a link of varying length between B and D.
+To replicate the behavior of the human foot, a new compliant foot mechanism based on the kinematic scheme in the next figure is presented. The proposed mechanism is based on a compliant mechanism in the plant, which can be approximated with a revolute‐revolute‐prismatic‐revolute architecture, with revolute joints in points B, C, and D, and a link of varying length between B and D.
 #### 
 ![fig6](https://github.com/user-attachments/assets/964573fc-6532-420d-a9bf-f8841f37e685)
 #### 
@@ -53,7 +53,7 @@ The mechanism works mainly on the sagittal plane, even if the compliant part can
 ####
 ### 3- Simulation and Results:
 #### 
-The results can be observed in the step‐by‐step effect of the load on the different bodies of the humanoid foot:
+The results can be observed in the step‐by‐step effect of the load on the different bodies of the humanoid foot, as is shown in the linear displacement distribution reported in the next illustration:
 ####
 ![fig 10](https://github.com/user-attachments/assets/2c7f0d04-8f13-4e9f-852a-31990e7b41bc)
 #### 
@@ -62,7 +62,7 @@ The results can be observed in the step‐by‐step effect of the load on the di
 -	The arc bottom part of the foot is loaded with a maximum tension of 1.57 × 106 N/m2, behaving as the human foot muscle when stepping.   
 -	The spring connecting the two bodies of the forefoot is stretched. This helps the foot to adapt to the ground, and the potential energy of the spring restores the neutral ‘flat’ position when the contact is released.  
 #### 
-These results validate the behavior of the proposed humanoid foot, showing that it acts similarly to the human foot in terms of stress while walking. Furthermore, the results prove that the proposed design can safely withstand the loads associated with an average human gait, including the impact of the foot on the ground.
+### These results validate the behavior of the proposed humanoid foot, showing that it acts similarly to the human foot in terms of stress while walking. Furthermore, the results prove that the proposed design can safely withstand the loads associated with an average human gait, including the impact of the foot on the ground.
 #### 
 ## References:- 
 #### 
